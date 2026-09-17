@@ -1,12 +1,16 @@
 #include <iostream>
 #include <cstdlib>
+#include <ctime>
 
 using namespace std;
 
 int main() {
     setlocale(LC_ALL,"Russian");
+
     // Число генерируется случайным образом от 1 до 100
+    srand(time(0));
     int secretNumber = rand() % 100 + 1;
+    
     int guess = 0;
 
     cout << "Угадай число от 1 до 100!" << endl;
