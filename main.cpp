@@ -4,6 +4,7 @@
 using namespace std;
 
 int main() {
+    setlocale(LC_ALL,"Russian");
     // Число генерируется случайным образом от 1 до 100
     int secretNumber = rand() % 100 + 1;
     int guess = 0;
